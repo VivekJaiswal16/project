@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+       
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh;
+
+}
+
+ul {
+    width: 53vw;
+    display: flex;
+    justify-content: space-around;
+}
+li {
+    display: inline-block;
+    position: relative;
+    top: 1vh;
+}
+
+a {
+    color: white;
+    background-color: rgb(65, 137, 232);
+    border-radius: 4px;
+}
+
+a:link {
+    text-decoration: none;
+    padding: 0.8vw;
+    box-shadow: 5px 5px 8px  #11447a;
+}
+a:hover {
+    /* position: relative;
+    bottom: 5px; */
+    box-shadow: 5px 5px 8px inset #11447a;
+}
+
+#logo {
+    height: 3vw;
+}
+
+#logo:hover{
+    position: relative;
+    top: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(198, 223, 234); */
+    background-image: linear-gradient(rgb(198, 223, 234) 50%,rgb(141, 216, 249));
+    height:85em;
+    
+    
+    
+}
+
+/* width */
+::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(154, 113, 250);
+    border-radius: 10px;
+  }
+
+  .skill1, .skill2, .skill3, .skill4 {
+    font-family: cursive;
+    color: darkblue;
+    margin: 0px 30px 30px 30px;
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 10px;
+    padding: 10px 10px 10px 2vw;
+    box-shadow: 1px 1px 5px #11447a;
+  }
+
+  .skill1:hover, .skill2:hover, .skill3:hover, .skill4:hover {
+    
+    margin: 0px 30px 30px 30px;
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 10px;
+    padding: 10px 10px 10px 2vw;
+    box-shadow: 1px 1px 5px inset #11447a;
+
+  }
+
+  .skills {
+    width: 65vw;
+  }
+
+  @media screen and (max-width: 700px) {
+    footer {
+        display: block;
+        background-color: white;
+    }
+    .title {
+        display: block;
+        text-align: center;
+        margin-bottom: 2vw;
+    }
+    ul {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        row-gap: 2vw;
+    }
+    li {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .skills {
+        width: 90vw;
+      }
+
+      .skill1, .skill2, .skill3, .skill4 {
+        font-family: cursive;
+        color: darkblue;
+        margin: 0px 20px 20px 20px;
+        background-color: rgba(255, 255, 255, 0.445);
+        border-radius: 10px;
+        padding: 10px 10px 10px 2vw;
+        box-shadow: 1px 1px 5px #11447a;
+        font-size: 3.5vw;
+      }
+      #logo {
+        height: 10vw;
+    }
+  }

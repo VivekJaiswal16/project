@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+       
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh;
+
+}
+
+ul {
+    width: 53vw;
+    display: flex;
+    justify-content: space-around;
+}
+li {
+    display: inline-block;
+    position: relative;
+    top: 1vh;
+}
+
+a {
+    color: white;
+    background-color: rgb(65, 137, 232);
+    border-radius: 4px;
+}
+
+a:link {
+    text-decoration: none;
+    padding: 0.8vw;
+    box-shadow: 5px 5px 8px  #11447a;
+}
+a:hover {
+    /* position: relative;
+    bottom: 5px; */
+    box-shadow: 5px 5px 8px inset #11447a;
+}
+
+#logo {
+    height: 3vw;
+}
+
+#logo:hover{
+    position: relative;
+    top: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* background-color: rgb(198, 223, 234); */
+    background-image: linear-gradient(rgb(198, 223, 234) 50%,rgb(141, 216, 249));
+    /* height: 100vh; */ 
+}
+
+.school {
+    height: 15vw;
+    border-radius: 3vw;
+}
+.pec {
+    height: 15vw;
+    border-radius: 3vw;
+}
+
+.sch {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    font-family: cursive;
+    padding-top: 4vw;
+    color: darkblue;
+    padding-bottom: 8vw;
+    
+
+}
+.coll {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    font-family: cursive;
+    padding-top: 4vw;
+    color: darkblue;
+
+}
+.horizontal1 {
+    overflow: auto;
+    white-space: nowrap;
+    width: 40vw;
+}
+.horizontal2 {
+    overflow: auto;
+    white-space: nowrap;
+    width: 40vw;
+}
+
+/* width */
+::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(154, 113, 250);
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: 700px) {
+    footer {
+        display: block;
+        background-color: white;
+    }
+    .title {
+        display: block;
+        text-align: center;
+        margin-bottom: 2vw;
+    }
+    ul {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        row-gap: 2vw;
+    }
+    li {
+        display:flex;
+        flex-direction: column;
+    }
+    .horizontal1 {
+        overflow: auto;
+        white-space: nowrap;
+        width: 80vw;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+    .horizontal2 {
+        overflow: auto;
+        white-space: nowrap;
+        width: 80vw;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        /* background-color: rgb(198, 223, 234); */
+        background-image: linear-gradient(rgb(198, 223, 234) 50%,rgb(141, 216, 249));
+        height: 100vh; 
+    }
+    .school {
+        height: 35vw;
+        border-radius: 5vw;
+    }
+    .pec {
+        height: 35vw;
+        border-radius: 5vw;
+    }
+    #logo {
+        height: 10vw;
+    }
+  }
